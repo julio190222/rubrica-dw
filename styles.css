@@ -445,7 +445,7 @@ button {
     }
     
     .cards {
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center;
     }
     
@@ -453,7 +453,7 @@ button {
         width: 80%;
     }
     
-    .mobile-hidden {
+    .card:last-child {
         display: none;
     }
     
