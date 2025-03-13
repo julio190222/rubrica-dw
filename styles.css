@@ -1,0 +1,542 @@
+* {
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #a0211e;
+    color: white;
+    overflow-x: hidden; /* Previene scroll horizontal */
+}
+
+.main-header {
+    background-color: #b71c1c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    width: 100%;
+}
+
+.brand h1 {
+    color: white;
+    font-size: 28px;
+    margin: 0; /* Sin margen externo */
+    padding-right: 20px; /* Padding a la derecha de 20px */
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.desktop-menu ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.desktop-menu li {
+    margin: 0 20px;
+}
+
+.desktop-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: lowercase;
+    font-family: Arial, sans-serif;
+}
+
+.desktop-menu a:hover {
+    text-decoration: underline;
+}
+
+.mobile-menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-menu-icon img {
+    width: 24px;
+    height: 24px;
+}
+
+.site-footer {
+    background-color:darkgray; /* Fondo gris */
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between; /* Distribuye las columnas */
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-section {
+    flex: 1; /* Cada sección ocupa el mismo espacio */
+    margin: 0 20px;
+  }
+  
+  
+  .footer-section p {
+    font-size: 14px;
+    color: #fff; /* Texto blanco */
+  }
+  
+  .footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #fff; /* Texto blanco */
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; /* Elimina el margen por defecto de la lista */
+  }
+  
+  .footer-section ul li {
+    margin: 10px 0; /* Espaciado entre elementos de la lista */
+  }
+  
+  .footer-section a {
+    color: #fff; /* Texto blanco */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+  }
+  /* Estilo por defecto para pantallas grandes */
+.company-logo {
+    content: url('Imagenes/Companies Section.png');
+}
+
+.mobile-menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #b71c1c;
+    z-index: 100;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   }
+
+.mobile-menu-container.active {
+    display: flex;
+}
+
+.mobile-menu-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mobile-menu-container li {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.mobile-menu-container a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    text-transform: lowercase;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #7c1815;
+}
+
+.navbar .menu {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    gap: 40px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: left;
+}
+
+.hero-image img {
+    flex: 1;
+    margin-left: auto;
+    height: auto;
+    max-width: 100%;
+}
+
+.hero-content {
+    max-width: 35%;
+    
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.branding {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    gap: 40px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: left;
+}
+
+.branding-image img {
+    flex: 1;
+    margin-left: auto;
+    height: auto;
+    max-width: 100%;
+}
+.branding-content {
+    max-width: 35%;
+    
+}
+.branding h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    
+}
+    .custom h1 {
+        font-size: 2.5em;
+        font-weight: bold;
+        margin-bottom: 100px;
+    
+    }
+    .custom  {
+        padding: 40px 20px; /* Espaciado interno de la sección */
+        text-align: center; /* Centra el contenido */
+}
+.contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    gap: 40px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: #808080;
+    text-align: left;
+    border-radius: 50px;
+    padding-bottom: 60px;
+    margin-bottom: 30px; 
+}
+
+
+.contact-image img {
+    flex: 1;
+    margin-left: auto;
+    height: auto;
+    max-width: 100%;
+}
+
+.contact-content {
+    
+    max-width: 35%; /* Limita el ancho del contenido */
+}
+
+.contact button {
+    background-color: red; /* Color rojo para el botón */
+    color: white; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    font-size: 1em; /* Tamaño de fuente */
+}
+
+.contact button:hover {
+    background-color: darkred; /* Color más oscuro al pasar el mouse */
+}
+
+.contact h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.companies {
+    text-align: center;
+    padding: 20px;
+}
+
+.logos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.cards {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 25px 20px;
+    width: 100%;
+    max-width: 350px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.card-content {
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.icon-container {
+    width: 65px;
+    height: 65px;
+    border-radius: 15px;
+    background-color: #ffebe9; /* Light pink background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+.card h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #2d2d2d;
+    margin: 0 0 10px 0;
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+.card p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #8d8d8d;
+    margin: 0;
+    font-family: sans-serif;
+    font-weight: 400;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .main-header {
+        justify-content: space-between;
+        padding: 15px 20px;
+    }
+    
+    .desktop-menu {
+        display: none;
+    }
+    
+    .mobile-menu-icon {
+        display: block;
+    }
+    
+    .brand h1 {
+        font-size: 24px; /* Slightly smaller on mobile, but still prominent */
+    }
+    .site-footer {
+        background-color: #24003a; /* Fondo morado para móviles */
+        color: #fff; /* Texto blanco */
+      }
+    
+      .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+    
+      .footer-section {
+        margin: 20px 0;
+      }
+    
+      .footer-section h2,
+      .footer-section h3,
+      .footer-section p,
+      .footer-section a {
+        color: #fff; /* Texto blanco en móviles */
+      }
+      .company-logo {
+        content: url('Imagenes/Companies\ Section-1.png'); /* Cambia el nombre de la imagen según corresponda */
+    }
+     
+    .logos img {
+        width: 1200px;
+    }
+    
+    .branding {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 50px;
+        text-align: left;
+    }
+    
+    .branding img {
+        width: 45%;
+    }
+    
+    .custom {
+        background-color: #b71c1c; /* Deep red background */
+        padding: 40px 20px;
+        width: 100%;
+    }
+    
+    .cards {
+        display: flex;
+        justify-content: space-around;
+        max-width: 1200px;
+        margin: 0 auto;
+        gap: 20px;
+    }
+    
+    .card {
+        background-color: white;
+        border-radius: 10px;
+        padding: 25px 20px;
+        width: 100%;
+        max-width: 350px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    .card-content {
+        display: flex;
+        align-items: flex-start;
+        text-align: left;
+    }
+    
+    .icon-container {
+        width: 65px;
+        height: 65px;
+        border-radius: 15px;
+        background-color: #ffebe9; /* Light pink background */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+    
+    .icon-container img {
+        width: 40px;
+        height: 40px;
+        object-fit: contain;
+    }
+    
+    
+    .card img {
+        width: 40px; /* Make image smaller than container */
+        height: 40px;
+        object-fit: contain;
+        margin: 5px; /* Add space around the image itself */
+    }
+    
+    .text-content {
+        flex: 1;
+    }
+    
+    .card h3 {
+        font-size: 18px;
+        font-weight: 700;
+        color: #2d2d2d;
+        margin: 0 0 10px 0;
+        text-transform: uppercase;
+        font-family: sans-serif;
+    }
+    
+    .card p {
+        font-size: 16px;
+        line-height: 1.5;
+        color: #8d8d8d;
+        margin: 0;
+        font-family: sans-serif;
+        font-weight: 400;
+    }
+    
+    .contact {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+        padding: 30px 15px;
+        border-radius: 20px;
+        background-color: #24003a; /* Color morado en móviles */
+        color: white; /* Texto en blanco para mejor contraste */
+        max-width: 90%; /* Reduce el ancho en móviles */
+        margin: 20px auto; /* Agrega margen para que no ocupe toda la pantalla */
+    }
+
+    .contact-content {
+        max-width: 90%;
+        
+    }
+
+    .contact button {
+        width: 100%;
+        max-width: 300px;
+        background-color: black;
+    }
+    .contact img { 
+        max-width: 60%;
+        display: none;
+    }
+    
+    .navbar .menu {
+        display: block;
+    }
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-content {
+        max-width: 90%;
+    }
+    .branding {
+        flex-direction: column;
+        text-align: center;
+    }
+    .branding img {
+        width: 90%;
+    }
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        width: 80%;
+    }
+    .contact img {
+        max-width: 90%;
+    }
+    
+
+ }
+
+
