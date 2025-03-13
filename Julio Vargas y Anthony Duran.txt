@@ -1,0 +1,6 @@
+Julio Vargas y Anthony Duran
+
+Repositorio: https://github.com/julio190222/rubrica-dw.git
+
+Despliegue: https://julio190222.github.io/rubrica-dw/
+
