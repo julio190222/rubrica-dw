@@ -229,13 +229,13 @@ button {
     margin-bottom: 20px;
     
 }
-    .custom h1 {
+.custom h1 {
         font-size: 2.5em;
         font-weight: bold;
         margin-bottom: 100px;
     
-    }
-    .custom  {
+}
+.custom  {
         padding: 40px 20px; /* Espaciado interno de la sección */
         text-align: center; /* Centra el contenido */
 }
